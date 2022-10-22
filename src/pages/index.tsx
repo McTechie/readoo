@@ -42,6 +42,8 @@ const Home: NextPage<Props> = ({ posts }) => {
   )
 }
 
+export default Home
+
 export const getServerSideProps = async () => {
   const query = `
     *[_type == 'post'] {
@@ -65,5 +67,3 @@ export const getServerSideProps = async () => {
     }
   }
 }
-
-export default Home

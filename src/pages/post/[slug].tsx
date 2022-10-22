@@ -1,7 +1,13 @@
 const Post = () => {
   return (
-    <div></div>
+    <main>
+
+    </main>
   )
 }
  
 export default Post
+
+export const getStaticPaths = async () => {
+  const query = ``;
+}
