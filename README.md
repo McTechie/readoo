@@ -1,27 +1,54 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center">
+  Readoo
+</h1>
+<p align="center" vertical-align="middle">
+  <a href="https://nextjs.org/">
+    <img alt="NextJS" src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67" width="40" />
+  </a>
+  <a href="https://www.sanity.io/">
+    <img alt="Sanity CMS" src="https://avatars.githubusercontent.com/u/17177659?s=200&v=4" width="40" />
+  </a>
+  <a href="https://tailwindcss.com/">
+    <img alt="Tailwind CSS" src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4" width="45" />
+  </a>
+</p>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> A modern, minimalistic, type-safe web application developed by **McTechie** 👨‍🎨✨
 
-## Deploy your own
+## Concepts Covered
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- [x] TypeScript
+  - [x] NextJS
+    - [x] Prop Types
+    - [x] Custom Type Definitions
+    - [x] Incremental Static Regeneration (ISR)
+  - [x] React Hook Form
+    - [x] Form State
+    - [x] Form Validation
+- [x] Sanity CMS
+  - [x] Studio
+  - [x] Plugins
+  - [x] Mutations
+  - [x] Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+---
 
-## How to use
+## Preview
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### Landing Screen
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+![Main Screen](./assets/landing.png)
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+---
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Blog Page
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+![Blog Page](./assets/blog.png)
+
+---
+
+### Comments Section
+
+![Comments Section](./assets/comments.png)
+
+---
