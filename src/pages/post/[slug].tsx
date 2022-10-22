@@ -20,8 +20,6 @@ interface CommentFormInput {
 }
 
 const Post = ({ post }: Props) => {
-  console.log(post)
-
   const [commentSubmitted, setCommentSubmitted] = useState(false)
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm<CommentFormInput>()
