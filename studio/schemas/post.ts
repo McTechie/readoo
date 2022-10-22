@@ -1,3 +1,5 @@
+import { Rule } from 'sanity'
+
 export default {
   name: 'post',
   title: 'Post',
@@ -8,12 +10,14 @@ export default {
       title: 'Title',
       description: 'It should make sense!',
       type: 'string',
+      validation: (Rule: Rule) => Rule.required().min(5)
     },
     {
       name: 'description',
       title: 'Description',
       description: 'What\'s your blog about?',
       type: 'string',
+      validation: (Rule: Rule) => Rule.required().min(10).max(50)
     },
     {
       name: 'slug',
@@ -29,6 +33,7 @@ export default {
       title: 'Author',
       type: 'reference',
       to: {type: 'author'},
+      validation: (Rule: Rule) => Rule.required()
     },
     {
       name: 'mainImage',
@@ -37,6 +42,7 @@ export default {
       options: {
         hotspot: true,
       },
+      validation: (Rule: Rule) => Rule.required()
     },
     {
       name: 'categories',
@@ -53,6 +59,7 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+      validation: (Rule: Rule) => Rule.required()
     },
   ],
 

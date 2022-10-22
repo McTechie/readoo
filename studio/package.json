@@ -12,6 +12,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/vision": "^3.0.0-dev-preview.20",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-is": "^17.0.0",

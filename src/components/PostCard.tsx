@@ -10,14 +10,16 @@ interface Props {
 const PostCard = ({ post }: Props) => (
   <Link href={`/post/${post.slug.current}`}>
     <div className='my-8 flex flex-col md:flex-row md:items-center md:space-x-14 p-4 max-w-7xl mx-auto border border-slate-700 bg-white rounded-xl group cursor-pointer hover:shadow-lg transition-apply overflow-hidden'>
-      <Image
-        src={urlFor(post.mainImage).url()}
-        alt={post.title}
-        width={1024}
-        height={1024}
-        objectFit='cover'
-        className='group-hover:scale-105 transition-apply blur-[1px] group-hover:blur-0 rounded-lg'
-      />
+      <div className='max-w-md'>
+        <Image
+          src={urlFor(post.mainImage).url()}
+          alt={post.title}
+          width={1024}
+          height={860}
+          objectFit='cover'
+          className='group-hover:scale-105 transition-apply blur-[1px] group-hover:blur-0 rounded-lg'
+        />
+      </div>
       <div>
         <div>
           <p className='text-lg font-bold py-3'>{post.title}</p>
