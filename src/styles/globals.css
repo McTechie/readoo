@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .transition-apply {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .nav-link {
+    @apply cursor-pointer hover:underline underline-offset-4 decoration-slate-600 decoration-wavy decoration-2 transition-apply;
+  }
+
+  .dot-loader {
+    @apply text-slate-700 my-20 mx-auto;
+  }
+}
+
+.dot-loader {
+  --d: radial-gradient(farthest-side,currentColor 90%,#0000);
+  width: 95px;
+  height: 45px;
+  background: var(--d),var(--d),var(--d),var(--d);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  animation: animate 1s infinite;
+}
+
+@keyframes animate {
+  0%  {background-position:calc(0*100%/3) 50%, calc(1*100%/3) 50% , calc(2*100%/3) 50%, calc(3*100%/3) 50% }
+  33% {background-position:calc(0*100%/3) 0  , calc(1*100%/3) 100%, calc(2*100%/3) 0  , calc(3*100%/3) 100%}
+  66% {background-position:calc(1*100%/3) 0  , calc(0*100%/3) 100%, calc(3*100%/3) 0  , calc(2*100%/3) 100%}
+  100%{background-position:calc(1*100%/3) 50%, calc(0*100%/3) 50% , calc(3*100%/3) 50%, calc(2*100%/3) 50% }
+}
+
+::selection {
+  color: white;
+  background-color: rgb(51,65,85);
+}
