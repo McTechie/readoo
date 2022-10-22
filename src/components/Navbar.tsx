@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between text-slate-700 p-5 max-w-7xl mx-auto'>
+    <nav className='flex justify-between p-5 max-w-7xl mx-auto'>
       <Link href='/'>
         <img
           src='/logo.png'
@@ -11,10 +11,10 @@ const Navbar = () => {
         />
       </Link>
       <div className='flex items-center space-x-5'>
-        <h3 className='text-white bg-slate-700 px-4 py-1 rounded-full border border-slate-700 cursor-pointer hover:scale-[1.03] transition-apply shadow-lg'>
+        <h3 onClick={() => alert('This feature is coming soon!')} className='text-white bg-indigo-700 px-4 py-1 rounded-full border border-indigo-700 cursor-pointer hover:scale-[1.03] transition-apply shadow-lg'>
           Sign In
         </h3>
-        <h3 className='border px-4 py-1 rounded-full border-slate-700 cursor-pointer hover:scale-[1.03] transition-apply shadow-md'>
+        <h3 onClick={() => alert('This feature is coming soon!')} className='border px-4 py-1 rounded-full border-indigo-700 cursor-pointer hover:scale-[1.03] transition-apply shadow-md text-indigo-700'>
           Get Started
         </h3>
       </div>

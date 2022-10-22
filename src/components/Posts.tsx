@@ -6,8 +6,6 @@ interface Props {
 }
 
 const Posts = ({ posts }: Props) => {
-  console.log(posts)
-
   return (
     <section className='max-w-7xl mx-auto text-slate-700 p-10'>
       {posts.map(post => (
