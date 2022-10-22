@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-studio/node_modules
+studio/
 
 # dependencies
 /node_modules
